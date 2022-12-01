@@ -30,7 +30,7 @@ public class CubeMovement : MonoBehaviour
         Vector3 initialPos = transform.position;
         Vector3 targetPos = initialPos + targetDir;
 
-        while (timeElapsed < animationTime)
+        while (timeElapsed <= animationTime)
         {
             transform.position = Vector3.Lerp(initialPos, targetPos, timeElapsed / animationTime);
             timeElapsed += Time.fixedDeltaTime;
@@ -47,7 +47,7 @@ public class CubeMovement : MonoBehaviour
         Vector3 initialRot = transform.eulerAngles;
         Vector3 targetRot = initialRot + rotAngles;
 
-        while (timeElapsed < animationTime)
+        while (timeElapsed <= animationTime)
         {
             transform.eulerAngles = Vector3.Lerp(initialRot, targetRot, timeElapsed / animationTime);
             timeElapsed += Time.fixedDeltaTime;
