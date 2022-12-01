@@ -5,14 +5,6 @@ using UnityEngine;
 public class CubeMovement : MonoBehaviour
 {
     public float animationTime = 2f;
-    public Vector3 newPos = Vector3.zero;
-    public Vector3 rotation = new Vector3(0, 180, 0);
-
-    void Start()
-    {
-        //TranslateCube(newPos);
-        RotateCube(rotation);
-    }
 
     public void TranslateCube(Vector3 targetDir)
     {
